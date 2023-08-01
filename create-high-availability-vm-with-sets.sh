@@ -39,10 +39,10 @@ az network nsg rule create \
 # Create the NIC
 for i in `seq 1 3`; do
   echo '------------------------------------------'
-  echo 'Creating webNic'$i
+  echo 'Creating Phi1811'$i
   az network nic create \
     --resource-group $RgName \
-    --name webNic$i \
+    --name Phi1811$i \
     --vnet-name bePortalVnet \
     --subnet bePortalSubnet \
     --network-security-group bePortalNSG
@@ -60,8 +60,8 @@ for i in `seq 1 3`; do
     az vm create \
         --admin-username azureuser \
         --resource-group $RgName \
-        --name webVM$i \
-        --nics webNic$i \
+        --name PhiVM$i \
+        --nics Phi1811$i \
         --image UbuntuLTS \
         --availability-set portalAvailabilitySet \
         --generate-ssh-keys \
