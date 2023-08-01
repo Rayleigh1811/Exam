@@ -1,0 +1,18 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+write_files:
+  - owner: www-data:www-data
+    path: /var/www/html/index.html
+    content: |
+      <html>
+      <head>
+        <title>hieuVM$i</title>
+      </head>
+      <body>
+        <h1>Hello from hieuntjs2205019@fpt.edu.vn$i</h1>
+      </body>
+      </html>
+runcmd:
+  - service apache2 restart
