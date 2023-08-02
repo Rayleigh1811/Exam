@@ -66,7 +66,7 @@ for i in `seq 1 3`; do
         --availability-set portalAvailabilitySet \
         --generate-ssh-keys \
         --custom-data cloud-init.txt
-done,
+done
 
 # Done
 echo '--------------------------------------------------------'
