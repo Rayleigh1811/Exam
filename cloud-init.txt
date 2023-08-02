@@ -10,10 +10,10 @@ write_files:
     content: |
       <html>
       <head>
-        <title>PhiVM{{i}}</title>
+        <title>hieuVM{{i}}</title>
       </head>
       <body>
-        <h1>Hello from phivmjs2205010 web {{i}}</h1>
+        <h1>Hello from phivmjs2205010@fpt.edu.vn{{i}}</h1>
       </body>
       </html>
 {% endfor %}
